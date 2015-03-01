@@ -1,0 +1,115 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+/* @charset "utf-8";
+
+
+
+// Our variables
+$base-font-family: Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    800px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+
+
+// Using media queries with like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout",
+        "syntax-highlighting"
+;
+*/
+body {
+margin: 0;
+}
+video {
+position: fixed;
+right: 0;
+bottom: 0;
+min-width: 100%;
+min-height: 100%;
+}
+
+video#video {
+position: fixed; right: 0; bottom: 0;
+min-width: 100%; min-height: 100%;
+width: auto; height: auto; z-index: -100;
+background: url(../images/Screenshot.png) no-repeat;
+background-size: cover;
+}
+
+.overlay {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 200;
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
+
+
+
+/*  -webkit-transform: translate(-50%, -50%);*/
+  text-align: center;
+  background: #E7E6E0;
+  opacity: 0.95;
+  padding: 4em;
+}
+.logo {
+	margin-bottom:2em; 
+}
+.input-group {
+
+}
+
+.content {
+  /*-webkit-transform: translate(-50%, -50%);*/
+  width: 50%;
+  margin: 0 auto;
+}
+
+#mc_embed_signup{background:#E7E6E0; font-family: inherit;}
+
+#mc_embed_signup_scroll h2 {
+font-family: "Helvetica Neue";
+font-weight: 100;
+font-size: 32px;
+text-align: center;
+}
+
+span.asterisk {
+  color: red;
+}	
